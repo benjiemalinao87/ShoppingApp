@@ -13,10 +13,10 @@ user_input = (input('Would you like to see today\'s menu? [Y/n]\n>'))
 if user_input.upper() == 'Y':
     print('Today\'s current food menu is:')
     for index, item in list(enumerate(food)):
-        print(index,'.', item)
+        print(index,'.', item, '-', menus['food'][item.lower()])
     print('The available beverages are:')
     for index, item in list(enumerate(beverages)):
-        print(index,'.', item)
+        print(index,'.', item, '-', menus['beverages'][item.lower()])
 
 
 # Get User Input
